@@ -116,12 +116,12 @@ struct ConvertSettings {
   // JPG compression quality [1=worst, 100=best].
   // * The practical range appears to be between 75-90: <75 and there isn't
   //   significant memory savings, and >90 the images become very large.
-  uint8_t jpg_quality = 85;
+  uint8_t jpg_quality = 100;
 
   // JPG compression quality, for normal-maps [1=worst, 100=best].
   // * This should usually be larger than jpg_quality, because normal-maps are
   //   more sensitive to errors.
-  uint8_t jpg_quality_norm = 96;
+  uint8_t jpg_quality_norm = 100;
 
   // JPG chroma subsampling method [0=best, 2=worst].
   // * This is only applicable to RGB textures. Grayscale and normal-map
@@ -136,7 +136,7 @@ struct ConvertSettings {
   uint8_t jpg_subsamp = 0;
 
   // PNG compression level [0=fastest, 9=smallest].
-  uint8_t png_level = 9;
+  uint8_t png_level = 0;
 
   // Explicit image size settings.
   ImageResizeSettings image_resize;
