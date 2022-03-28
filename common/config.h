@@ -76,7 +76,7 @@ constexpr float kFallbackOcclusion = 1.0f;
 
 struct ImageResizeSettings {
   static constexpr size_t kDefaultSizeMin = 1;
-  static constexpr size_t kDefaultSizeMax = 100 * 1024;
+  static constexpr size_t kDefaultSizeMax = 5 * 1024;
   bool force_power_of_2 = false;
   float scale = 1.0f;
   uint32_t size_min = kDefaultSizeMin;
