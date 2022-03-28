@@ -76,7 +76,7 @@ constexpr float kFallbackOcclusion = 1.0f;
 
 struct ImageResizeSettings {
   static constexpr size_t kDefaultSizeMin = 1;
-  static constexpr size_t kDefaultSizeMax = 5 * 1024;
+  static constexpr size_t kDefaultSizeMax = 320 * 1024 * 1024;
   bool force_power_of_2 = false;
   float scale = 1.0f;
   uint32_t size_min = kDefaultSizeMin;
@@ -150,7 +150,7 @@ struct ConvertSettings {
   //   the iOS viewer. It's undocumented, but appears to be ~200MB, accounting
   //   for waste due to mip-mapping and alignment.
   // * Set to 0 to disable this limit.
-  uint32_t limit_total_image_decompressed_size = 160 * 1024 * 1024;
+  uint32_t limit_total_image_decompressed_size = 320 * 1024 * 1024;
 
   // When limiting total image size, reduce per-axis scale by this amount until
   // we find a total that fits.
